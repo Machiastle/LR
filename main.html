@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMILE NA OR ELSE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="initial">
+      <div class="sad">
+        <img src="sad.jpg" alt="" />
+      </div>
+      <div class="design">
+        <div class="content">
+          <div class="title">
+            <h2>GALIT KA PA?</h2>
+          </div>
+          <div class="buttons">
+            <button class="b1" onclick="showFlowers()">YES</button>
+            <button class="b2" onclick="moveNoButton()">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function moveNoButton() {
+      // Move the "NO" button to a random location on the website
+      var noButton = document.querySelector(".b2");
+
+      var randomLeft = Math.floor(Math.random() * window.innerWidth);
+      var randomTop = Math.floor(Math.random() * window.innerHeight);
+
+      noButton.style.position = "absolute";
+      noButton.style.left = randomLeft + "px";
+      noButton.style.top = randomTop + "px";
+    }
+    function showFlowers() {
+      window.location.href = "foru.html";
+    }
+  </script>
+</html>

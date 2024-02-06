@@ -1,0 +1,26 @@
+.sad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+}
+.design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+}
+.b1 {
+  width: 5rem;
+  height: 2rem;
+  margin-right: 2rem;
+  background-color: green;
+}
+.b2 {
+  width: 5rem;
+  height: 2rem;
+  background-color: red;
+}
